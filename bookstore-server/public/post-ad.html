@@ -1,0 +1,283 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Resale a Business Category Flat Bootstrap Responsive Website Template | Post Ad :: w3layouts</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-select.css">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Resale Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!--fonts-->
+<link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!--//fonts-->
+<!-- js -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- js -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.js"></script>
+<script>
+  $(document).ready(function () {
+    var mySelect = $('#first-disabled2');
+
+    $('#special').on('click', function () {
+      mySelect.find('option:selected').prop('disabled', true);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#special2').on('click', function () {
+      mySelect.find('option:disabled').prop('disabled', false);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#basic2').selectpicker({
+      liveSearch: true,
+      maxOptions: 1
+    });
+  });
+</script>
+<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+<link href="css/jquery.uls.css" rel="stylesheet"/>
+<link href="css/jquery.uls.grid.css" rel="stylesheet"/>
+<link href="css/jquery.uls.lcd.css" rel="stylesheet"/>
+<!-- Source -->
+<script src="js/jquery.uls.data.js"></script>
+<script src="js/jquery.uls.data.utils.js"></script>
+<script src="js/jquery.uls.lcd.js"></script>
+<script src="js/jquery.uls.languagefilter.js"></script>
+<script src="js/jquery.uls.regionfilter.js"></script>
+<script src="js/jquery.uls.core.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"> // for making http request and you need to get jquery cdn along with this
+
+<script>
+			$( document ).ready( function() {
+				$( '.uls-trigger' ).uls( {
+					onSelect : function( language ) {
+						var languageName = $.uls.data.getAutonym( language );
+						$( '.uls-trigger' ).text( languageName );
+					},
+					quickList: ['en', 'hi', 'he', 'ml', 'ta', 'fr'] //FIXME
+				} );
+			} );
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+    <script src="js/easyResponsiveTabs.js"></script>
+</head>
+<body>
+<div class="header">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html"><span>Re</span>sale</a>
+			</div>
+			<div class="header-right">
+			<a class="account" href="login.html">My Account</a>
+				<script>
+				$('#myModal').modal('');
+				</script>
+			</div>
+		</div>
+		</div>
+
+	<div class="banner text-center">
+	  <div class="container">
+			<h1>Buy and Sell   <span class="segment-heading">    any book online </span> with Resale</h1>
+			<p></p>
+			<a href="post-ad.html">Post Free Ad</a>
+	  </div>
+	</div>
+	<!-- Submit Ad -->
+	<div class="submit-ad main-grid-border">
+		<div class="container">
+			<h2 class="head">Post an Ad</h2>
+			<div class="post-ad-form">
+				<form id="postadd-form" enctype="multipart/form-data">
+					<label>Select Category <span>*</span></label>
+					<select class="" id="category" name="category">
+					  <option>Select Category</option>
+					  <option>College</option>
+					  <option>Others</option>
+					</select>
+					<div class="clearfix"></div>
+					<label>Ad Title <span>*</span></label>
+					<input type="text" class="phone"  id="title" placeholder="" name= "title">
+					<div class="clearfix"></div>
+					<!-- <label>Ad Description <span>*</span></label>
+					<textarea class="mess" placeholder="Write few lines about your product"></textarea>
+					<div class="clearfix"></div> -->
+				<div class="upload-ad-photos">
+				<label>Photos for your ad :</label>
+					<div class="photos-upload-view">
+						<!-- <form id="upload" action="index.html" method="POST" enctype="multipart/form-data"> -->
+
+						<!-- <input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="300000" /> -->
+
+						<div>
+							<input type="file" id="fileselect" name="photo" multiple/>
+							<div id="filedrag">or drop files here</div>
+						</div>
+
+						<div id="submitbutton">
+							<button type="submit">Upload Files</button>
+						</div>
+
+
+
+
+						</div>
+					<div class="clearfix"></div>
+						<script src="js/filedrag.js"></script>
+				</div>
+					<div class="personal-details">
+             <label>Price <span>*</span></label>
+            <input type="text" class="name" placeholder="" id="price">
+            <div class="clearfix"></div>
+					 <label>Your Name <span>*</span></label>
+						<input type="text" class="name" placeholder="" id="name">
+						<div class="clearfix"></div>
+						<label>Your Mobile No <span>*</span></label>
+						<input type="text" class="phone" placeholder="" id="phone">
+						<div class="clearfix"></div>
+						<label>Your Email Address<span>*</span></label>
+						<input type="text" class="email" placeholder="" id="email">
+						<div class="clearfix"></div>
+						<p class="post-terms">By clicking <strong>post Button</strong> you accept our <a href="terms.html" target="_blank">Terms of Use </a> and <a href="privacy.html" target="_blank">Privacy Policy</a></p>
+					<input type="submit" value="Post">
+					<div class="clearfix"></div>
+					</form>
+					</div>
+			</div>
+
+
+	<!-- // Submit Ad -->
+	<!--footer section start-->
+		<footer>
+			<div class="footer-top">
+				<div class="container">
+					<div class="foo-grids">
+						<div class="col-md-3 footer-grid">
+							<h4 class="footer-head">Who We Are</h4>
+							<p>Welcome to Resale, your number one source for all the books you need. We're dedicated to giving you the very best of our service, with a focus on dependability, customer service and uniqueness.</p>
+							<p>We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.</p>
+						</div>
+						<div class="col-md-3 footer-grid">
+							<h4 class="footer-head">Help</h4>
+							<ul>
+								<li><a href="#">How it Works</a></li>
+								<li><a href="#">Sitemap</a></li>
+								<li><a href="#">Faq</a></li>
+								<li><a href="#">Feedback</a></li>
+								<li><a href="#">Contact</a></li>
+								<li><a href="#">Shortcodes</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3 footer-grid">
+							<h4 class="footer-head">Information</h4>
+							<ul>
+								<li><a href="#">Locations Map</a></li>
+								<li><a href="#">Terms of Use</a></li>
+								<li><a href="#">Popular searches</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3 footer-grid">
+							<h4 class="footer-head">Contact Us</h4>
+							<span class="hq">Our headquarters</span>
+							<address>
+								<ul class="location">
+									<li><span class="glyphicon glyphicon-map-marker"></span></li>
+									<li>115 T.V.Industrial Estate, Worli, Mumbai, Maharashtra-400030</li>
+									<div class="clearfix"></div>
+								</ul>
+								<ul class="location">
+									<li><span class="glyphicon glyphicon-earphone"></span></li>
+									<li>+91 8454 011 824</li>
+									<div class="clearfix"></div>
+								</ul>
+								<ul class="location">
+									<li><span class="glyphicon glyphicon-envelope"></span></li>
+									<li><a href="mailto:info@example.com">ashpawar111115@gmail.com</a></li>
+									<div class="clearfix"></div>
+								</ul>
+							</address>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom text-center">
+			<div class="container">
+				<div class="footer-logo">
+					<a href="index.html"><span>Re</span>sale</a>
+				</div>
+				<div class="footer-social-icons">
+					<ul>
+						<li><a class="facebook" href="#"><span>Facebook</span></a></li>
+						<li><a class="twitter" href="#"><span>Twitter</span></a></li>
+						<li><a class="flickr" href="#"><span>Flickr</span></a></li>
+						<li><a class="googleplus" href="#"><span>Google+</span></a></li>
+						<li><a class="dribbble" href="#"><span>Dribbble</span></a></li>
+					</ul>
+				</div>
+				<div class="copyrights">
+					<p> © 2019 Resale. All Rights Reserved | Design by  <a href="#"> ash@pawar</a></p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		</footer>
+        <!--footer section end-->
+</body>
+</html>
+
+
+<script type="text/javascript">
+$('#postadd-form').submit(function(e) {
+  console.log("button clicked")
+  e.preventDefault();
+  var category = $('#category').val();
+  var title = $('#title').val();
+  var photo = $('#fileselect')[0].files;
+  var price = $('#price').val();
+  var name = $('#name').val();
+  var phone = $('#phone').val();
+  var email = $('#email').val();
+  let formData = new FormData();
+  formData.append('category', category);
+  formData.append('title', title);
+  formData.append('price', price);
+  formData.append('name', name);
+  formData.append('phone', phone);
+  formData.append('email', email);
+  for (let d of photo) {
+    formData.append('photo', d)
+  }
+
+console.log(photo);
+  if (category && title && photo && price && name && phone && email) {
+
+    axios.post('http://localhost:5001/books', formData)
+      .then(
+        response => {
+          $('#show-message').append('<h1>Book saved.</h1>').delay(5000).fadeOut('slow');
+          $("#postadd-form")[0].reset();
+        }
+      ).catch(
+        error => {
+          console.log(error, error.response)
+        }
+      )
+  }
+});
+</script>

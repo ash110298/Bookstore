@@ -1,0 +1,1068 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Resale - Buy and Sell books online free from anywhere | Others :: ash@pawar</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-select.css">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/jquery-ui1.css">
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Resale Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!--fonts-->
+<link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!--//fonts-->
+<!-- js -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- js -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.js"></script>
+<script>
+  $(document).ready(function () {
+    var mySelect = $('#first-disabled2');
+
+    $('#special').on('click', function () {
+      mySelect.find('option:selected').prop('disabled', true);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#special2').on('click', function () {
+      mySelect.find('option:disabled').prop('disabled', false);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#basic2').selectpicker({
+      liveSearch: true,
+      maxOptions: 1
+    });
+  });
+</script>
+<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+<link href="css/jquery.uls.css" rel="stylesheet"/>
+<link href="css/jquery.uls.grid.css" rel="stylesheet"/>
+<link href="css/jquery.uls.lcd.css" rel="stylesheet"/>
+<!-- Source -->
+<script src="js/jquery.uls.data.js"></script>
+<script src="js/jquery.uls.data.utils.js"></script>
+<script src="js/jquery.uls.lcd.js"></script>
+<script src="js/jquery.uls.languagefilter.js"></script>
+<script src="js/jquery.uls.regionfilter.js"></script>
+<script src="js/jquery.uls.core.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"> // for making http request and you need to get jquery cdn along with this
+
+<script>
+			$( document ).ready( function() {
+				$( '.uls-trigger' ).uls( {
+					onSelect : function( language ) {
+						var languageName = $.uls.data.getAutonym( language );
+						$( '.uls-trigger' ).text( languageName );
+					},
+					quickList: ['en', 'hi', 'he', 'ml', 'ta', 'fr'] //FIXME
+				} );
+			} );
+		</script>
+    <script src="js/tabs.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+var elem=$('#container ul');
+	$('#viewcontrols a').on('click',function(e) {
+		if ($(this).hasClass('gridview')) {
+			elem.fadeOut(1000, function () {
+				$('#container ul').removeClass('list').addClass('grid');
+				$('#viewcontrols').removeClass('view-controls-list').addClass('view-controls-grid');
+				$('#viewcontrols .gridview').addClass('active');
+				$('#viewcontrols .listview').removeClass('active');
+				elem.fadeIn(1000);
+			});
+		}
+		else if($(this).hasClass('listview')) {
+			elem.fadeOut(1000, function () {
+				$('#container ul').removeClass('grid').addClass('list');
+				$('#viewcontrols').removeClass('view-controls-grid').addClass('view-controls-list');
+				$('#viewcontrols .gridview').removeClass('active');
+				$('#viewcontrols .listview').addClass('active');
+				elem.fadeIn(1000);
+			});
+		}
+	});
+});
+</script>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html"><span>Re</span>sale</a>
+			</div>
+			<!-- <div class="header-right">
+			<a class="account" href="login.html">My Account</a> -->
+		</div>
+		</div>
+	</div>
+	<div class="main-banner banner text-center">
+	  <div class="container">
+			<h1>Buy and Sell   <span class="segment-heading">    any book online </span> with Resale</h1>
+			<p></p>
+			<a href="post-ad.html">Post Free Ad</a>
+	  </div>
+	</div>
+	<!-- Books, sports & hobbies -->
+				<div class="clearfix"></div>
+
+			<ol class="breadcrumb" style="margin-bottom: 5px;">
+			  <li><a href="index.html">Home</a></li>
+			  <li class="active">Others</li>
+			</ol>
+			<div class="ads-grid">
+				<div class="side-bar col-md-3">
+					<div class="search-hotel">
+					<h3 class="sear-head">Name contains</h3>
+					<form>
+						<input type="text" value="Product name..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Product name...';}" required="">
+						<input type="submit" value=" ">
+					</form>
+				</div>
+
+				<div class="range">
+					<h3 class="sear-head">Price range</h3>
+							<ul class="dropdown-menu6">
+								<li>
+
+									<div id="slider-range"></div>
+										<input type="text" id="amount" style="border: 0; color: #ffffff; font-weight: normal;" />
+									</li>
+							</ul>
+							<!---->
+							<script type="text/javascript" src="js/jquery-ui.js"></script>
+							<script type='text/javascript'>//<![CDATA[
+							$(window).load(function(){
+							 $( "#slider-range" ).slider({
+										range: true,
+										min: 100,
+										max: 9000,
+										values: [ 200, 6000 ],
+										slide: function( event, ui ) {  $( "#amount" ).val( "₹" + ui.values[ 0 ] + " - ₹" + ui.values[ 1 ] );
+										}
+							 });
+							$( "#amount" ).val( "₹" + $( "#slider-range" ).slider( "values", 0 ) + " - ₹" + $( "#slider-range" ).slider( "values", 1 ) );
+
+							});//]]>
+
+							</script>
+
+				</div>
+
+        <div class="featured-ads">
+					<h2 class="sear-head fer">Featured Ads</h2>
+					<div class="featured-ad">
+						<a href="single.html">
+							<div class="featured-ad-left">
+								<img src="images/Book1.jpg" title="ad image" alt="" />
+							</div>
+							<div class="featured-ad-right">
+								<h4> </h4>
+								<p>₹ 450</p>
+							</div>
+							<div class="clearfix"></div>
+						</a>
+					</div>
+					<div class="featured-ad">
+
+							<div class="featured-ad-left">
+								<img src="images/Book4.jpg" title="ad image" alt="" />
+							</div>
+							<div class="featured-ad-right">
+								<h4> </h4>
+								<p>₹ 380</p>
+							</div>
+							<div class="clearfix"></div>
+
+					</div>
+					<div class="featured-ad">
+						<a href="single.html">
+							<div class="featured-ad-left">
+								<img src="images/Book3.jpg" title="ad image" alt="" />
+							</div>
+							<div class="featured-ad-right">
+								<h4> </h4>
+								<p>₹ 560</p>
+							</div>
+
+							<div class="clearfix"></div>
+						</a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				</div>
+				<div class="ads-display col-md-9">
+					<div class="wrapper">
+					<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+					  <ul id="myTab" class="nav nav-tabs nav-tabs-responsive" role="tablist">
+						<li role="presentation" class="active">
+						  <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">
+							<span class="text">All Ads</span>
+						  </a>
+						</li>
+
+					  </ul>
+					  <div id="myTabContent" class="tab-content">
+						<div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+						   <div>
+												<div id="container">
+								<div class="view-controls-list" id="viewcontrols">
+									<label>view :</label>
+									<a class="gridview"><i class="glyphicon glyphicon-th"></i></a>
+									<a class="listview active"><i class="glyphicon glyphicon-th-list"></i></a>
+								</div>
+								<div class="sort">
+								   <div class="sort-by">
+										<label>Sort By : </label>
+										<select>
+														<option value="">Most recent</option>
+														<option value="">Price: Rs Low to High</option>
+														<option value="">Price: Rs High to Low</option>
+										</select>
+									   </div>
+									 </div>
+								<div class="clearfix"></div>
+							<ul class="list">
+                <div class="all_books1"></div>
+                <!-- <a href="single.html">
+									<li>
+									<img src="images/Book4.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">There are many variations of passages of Lorem Ipsum</h5>
+									<span class="adprice">$290</span>
+
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:55</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b2.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">It is a long established fact that a reader</h5>
+									<span class="adprice">$310</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:45</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b3.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">Contrary to popular belief, Lorem Ipsum is not</h5>
+									<span class="adprice">$190</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:30</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b4.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">The standard chunk of Lorem Ipsum used since the</h5>
+									<span class="adprice">$480</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:25</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b5.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h5>
+									<span class="adprice">$859</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:24</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b6.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">But I must explain to you how all this mistaken idea of denouncing</h5>
+									<span class="adprice">$1299</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:22</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a> -->
+								<!-- <a href="single.html">
+									<li>
+									<img src="images/b1.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</h5>
+									<span class="adprice">$1099</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:21</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b7.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">On the other hand, we denounce with righteous dislike men</h5>
+									<span class="adprice">$290</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:20</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b8.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">There are many variations of passages of Lorem Ipsum</h5>
+									<span class="adprice">$899</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:05</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b9.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et qua</h5>
+									<span class="adprice">$199</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:04</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b10.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">There are many variations of passages of Lorem Ipsum</h5>
+									<span class="adprice">$250</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:03</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b11.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">who are so beguiled and demoralized by the charms of pleasure of the moment</h5>
+									<span class="adprice">$189</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:03</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b12.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">you need to be sure there isn't anything embarrassing hidden</h5>
+									<span class="adprice">$1090</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:03</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b13.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">looked up one of the more obscure Latin words</h5>
+									<span class="adprice">$599</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:02</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								<div class="clearfix"></div>
+								</a>
+							</ul>
+						</div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+						 <div>
+												<div id="container">
+								<div class="view-controls-list" id="viewcontrols">
+									<label>view :</label>
+									<a class="gridview"><i class="glyphicon glyphicon-th"></i></a>
+									<a class="listview active"><i class="glyphicon glyphicon-th-list"></i></a>
+								</div>
+								<div class="sort">
+								   <div class="sort-by">
+										<label>Sort By : </label>
+										<select>
+														<option value="">Most recent</option>
+														<option value="">Price: Rs Low to High</option>
+														<option value="">Price: Rs High to Low</option>
+										</select>
+									   </div>
+									 </div>
+								<div class="clearfix"></div>
+							<ul class="list">
+								<a href="single.html">
+									<li>
+									<img src="images/b1.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">There are many variations of passages of Lorem Ipsum</h5>
+									<span class="adprice">$290</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:55</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b2.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">It is a long established fact that a reader</h5>
+									<span class="adprice">$310</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:45</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b3.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">Contrary to popular belief, Lorem Ipsum is not</h5>
+									<span class="adprice">$190</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:30</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b4.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">The standard chunk of Lorem Ipsum used since the</h5>
+									<span class="adprice">$480</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:25</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b5.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h5>
+									<span class="adprice">$859</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:24</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b6.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">But I must explain to you how all this mistaken idea of denouncing</h5>
+									<span class="adprice">$1299</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:22</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b1.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</h5>
+									<span class="adprice">$1099</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:21</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b7.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">On the other hand, we denounce with righteous dislike men</h5>
+									<span class="adprice">$290</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:20</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b8.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">There are many variations of passages of Lorem Ipsum</h5>
+									<span class="adprice">$899</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:05</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b9.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et qua</h5>
+									<span class="adprice">$199</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:04</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b10.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">There are many variations of passages of Lorem Ipsum</h5>
+									<span class="adprice">$250</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:03</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b11.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">who are so beguiled and demoralized by the charms of pleasure of the moment</h5>
+									<span class="adprice">$189</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:03</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b12.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">you need to be sure there isn't anything embarrassing hidden</h5>
+									<span class="adprice">$1090</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:03</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b13.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">looked up one of the more obscure Latin words</h5>
+									<span class="adprice">$599</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:02</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								<div class="clearfix"></div>
+								</a>
+							</ul>
+						</div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="samsa" aria-labelledby="samsa-tab">
+						  <div>
+												<div id="container">
+								<div class="view-controls-list" id="viewcontrols">
+									<label>view :</label>
+									<a class="gridview"><i class="glyphicon glyphicon-th"></i></a>
+									<a class="listview active"><i class="glyphicon glyphicon-th-list"></i></a>
+								</div>
+								<div class="sort">
+								   <div class="sort-by">
+										<label>Sort By : </label>
+										<select>
+														<option value="">Most recent</option>
+														<option value="">Price: Rs Low to High</option>
+														<option value="">Price: Rs High to Low</option>
+										</select>
+									   </div>
+									 </div>
+								<div class="clearfix"></div>
+							<ul class="list">
+								<a href="single.html">
+									<li>
+									<img src="images/b1.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">There are many variations of passages of Lorem Ipsum</h5>
+									<span class="adprice">$290</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:55</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b2.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">It is a long established fact that a reader</h5>
+									<span class="adprice">$310</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:45</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b3.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">Contrary to popular belief, Lorem Ipsum is not</h5>
+									<span class="adprice">$190</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:30</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b4.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">The standard chunk of Lorem Ipsum used since the</h5>
+									<span class="adprice">$480</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:25</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b5.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h5>
+									<span class="adprice">$859</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:24</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b6.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">But I must explain to you how all this mistaken idea of denouncing</h5>
+									<span class="adprice">$1299</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:22</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b1.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</h5>
+									<span class="adprice">$1099</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:21</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b7.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">On the other hand, we denounce with righteous and dislike men</h5>
+									<span class="adprice">$290</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:20</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b8.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">There are many variations of passages of Lorem Ipsum</h5>
+									<span class="adprice">$899</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:05</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b9.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et qua</h5>
+									<span class="adprice">$199</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:04</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b10.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">There are many variations of passages of Lorem Ipsum</h5>
+									<span class="adprice">$250</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:03</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b11.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">who are so beguiled and demoralized by the charms of pleasure of the moment</h5>
+									<span class="adprice">$189</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:03</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b12.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">you need to be sure there isn't anything embarrassing hidden</h5>
+									<span class="adprice">$1090</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:03</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								</a>
+								<a href="single.html">
+									<li>
+									<img src="images/b13.jpg" title="" alt="" />
+									<section class="list-left">
+									<h5 class="title">looked up one of the more obscure Latin words</h5>
+									<span class="adprice">$599</span>
+									<p class="catpath">Books, Sports & Hobbies » Musical Instruments</p>
+									</section>
+									<section class="list-right">
+									<span class="date">Today, 17:02</span>
+									<span class="cityname">City name</span>
+									</section>
+									<div class="clearfix"></div>
+									</li>
+								<div class="clearfix"></div>
+								</a> -->
+							</ul>
+              <div class="canvas"></div>
+						</div>
+							</div>
+						</div>
+						<ul class="pagination pagination-sm">
+							<li><a href="#">Prev</a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">6</a></li>
+							<li><a href="#">7</a></li>
+							<li><a href="#">8</a></li>
+							<li><a href="#">Next</a></li>
+						</ul>
+					  </div>
+					</div>
+				</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+
+
+	<!-- // Books, sports & hobbies -->
+	<!--footer section start-->
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="foo-grids">
+          <div class="col-md-3 footer-grid">
+            <h4 class="footer-head">Who We Are</h4>
+            <p>Welcome to Resale, your number one source for all the books you need. We're dedicated to giving you the very best of our service, with a focus on dependability, customer service and uniqueness.</p>
+            <p>We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.</p>
+          </div>
+          <div class="col-md-3 footer-grid">
+            <h4 class="footer-head">Help</h4>
+            <ul>
+              <li><a href="#">How it Works</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">Faq</a></li>
+              <li><a href="#">Feedback</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Shortcodes</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-grid">
+            <h4 class="footer-head">Information</h4>
+            <ul>
+              <li><a href="#">Locations Map</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Popular searches</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-grid">
+            <h4 class="footer-head">Contact Us</h4>
+            <span class="hq">Our headquarters</span>
+            <address>
+              <ul class="location">
+                <li><span class="glyphicon glyphicon-map-marker"></span></li>
+                <li>115 T.V.Industrial Estate, Worli, Mumbai, Maharashtra-400030</li>
+                <div class="clearfix"></div>
+              </ul>
+              <ul class="location">
+                <li><span class="glyphicon glyphicon-earphone"></span></li>
+                <li>+91 8454 011 824</li>
+                <div class="clearfix"></div>
+              </ul>
+              <ul class="location">
+                <li><span class="glyphicon glyphicon-envelope"></span></li>
+                <li><a href="#">ashpawar111115@gmail.com</a></li>
+                <div class="clearfix"></div>
+              </ul>
+            </address>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+    <div class="container">
+      <div class="footer-logo">
+        <a href="index.html"><span>Re</span>sale</a>
+      </div>
+      <div class="footer-social-icons">
+        <ul>
+          <li><a class="facebook" href="#"><span>Facebook</span></a></li>
+          <li><a class="twitter" href="#"><span>Twitter</span></a></li>
+          <li><a class="flickr" href="#"><span>Flickr</span></a></li>
+          <li><a class="googleplus" href="#"><span>Google+</span></a></li>
+          <li><a class="dribbble" href="#"><span>Dribbble</span></a></li>
+        </ul>
+      </div>
+      <div class="copyrights">
+        <p> © 2019 Resale. All Rights Reserved | Design by  <a href="#"> ash@pawar</a></p>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  </footer>
+        <!--footer section end-->
+</body>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+   //  const $canvas = $( '.canvas' );
+   // for(var i = 0 ; i < 63 ; i++){
+   //   $canvas.append('<ul>test</ul>');
+   // }
+   var url_string = window.location.href; //window.location.href
+   var url = new URL(url_string);
+   var category_name = url.searchParams.get('category_name');
+   axios.get('http://localhost:5001/books' + '/' + category_name)
+    .then(
+      response => {
+        console.log(response);
+
+        var book1 = $('.all_books1');
+        for (let c of response.data) {
+          var bookHtml1 = '';
+           bookHtml1 += '<a href="http://localhost:8081/single.html?book_id='+ c._id +'">';
+            bookHtml1 +=   '<li>';
+            bookHtml1 +=   '<img src="http://localhost:5001/uploads/'+c.image_url0+'"/>';
+            // bookHtml += '</img>'
+            bookHtml1 +=   '<section class="list-left">';
+            bookHtml1 +=   '<h5 class="title">' + c.title + '</h5>';
+            bookHtml1 +=   '<span class="adprice"> ₹ ' + c.price +'</span>';
+            bookHtml1 +=            '<p class="catpath">'+ +'</p>';
+            bookHtml1 +=            '</section>';
+            bookHtml1 +=            '<section class="list-right">';
+            bookHtml1 +=            '<span class="date">'+c.createdAt+'</span>';
+            bookHtml1 +=            '<span class="cityname">City name</span>'
+            bookHtml1 +=            '</section>';
+            bookHtml1 +=            '<div class="clearfix"></div>';
+            bookHtml1 +=          '</li>';
+            bookHtml1 +=          '</a>';
+          book1.append(bookHtml1)
+        }
+      }
+    ).catch(
+      error => {
+        console.log(error.response)
+      }
+    )
+  });
+</script>
+</html>
